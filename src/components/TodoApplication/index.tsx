@@ -8,7 +8,12 @@ interface IProps{
 }
 
 interface IState{
-    todoList : any[];
+    todoList : {
+        id : number,
+        todoTask : string,
+        isEdit : boolean,
+        isComplete : boolean    
+    }[];
     inputTodo : string,
     isButton : boolean,
     activeId : number
@@ -67,7 +72,6 @@ class TodoApplication extends Component<IProps,IState>{
     render(){
         const {inputTodo,todoList,isButton} = this.state
         const palceHolder = isButton ? "Update Todo" : "Enter Todo"
-        // const isCompletedTask = todoList.map(item => item.isComplete ? "classCompleted" : "")
         return(
             <center>
                 <div style={{width:"300px"}}>
