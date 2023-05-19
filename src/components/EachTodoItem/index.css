@@ -1,0 +1,26 @@
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button{
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.completeTask{
+    text-decoration: line-through 2px black;
+}
